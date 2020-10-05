@@ -1,0 +1,1 @@
+SELECT `UniqueCarrier`, AVG( `ArrDelay` ) FROM `USAirlineFlights2`.`Flights` AS `Flights` GROUP BY `UniqueCarrier` HAVING ( ( AVG( `ArrDelay` ) > 10 ) ) ORDER BY AVG( `ArrDelay` ) DESC

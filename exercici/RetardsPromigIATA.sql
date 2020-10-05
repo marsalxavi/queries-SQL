@@ -1,0 +1,1 @@
+SELECT `Origin`, AVG( `ArrDelay` ), AVG( `DepDelay` ) FROM `USAirlineFlights2`.`Flights` AS `Flights` GROUP BY `Origin` ORDER BY `Origin` ASC

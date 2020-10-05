@@ -1,0 +1,1 @@
+SELECT `UniqueCarrier`, `colYear`, `colMonth`, COUNT( `flightID` ) FROM `USAirlineFlights2`.`Flights` AS `Flights` WHERE `Cancelled` = 1 GROUP BY `UniqueCarrier`, `colYear`, `colMonth` ORDER BY COUNT( `flightID` ) DESC
